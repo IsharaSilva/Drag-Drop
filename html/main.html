@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function allowDrop(ev) {
+              ev.preventDefault();
+            }
+            
+            function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+            }
+          
+            </script>
+    </head>
+    <body>
+ 
+            <section class="draggable-elements">
+            <div class="circle" draggable="true" style="background-color: rgb(56, 140, 218);" id="box-a" ondragstart="drag(event)"><span>8</span></div>
+            <div class="circle" draggable="true" style="background-color: rgb(56, 140, 218);" id="box-b" ondragstart="drag(event)"><span>12</span></div>
+            <div class="circle" draggable="true" style="background-color: rgb(56, 140, 218);" id="box-c" ondragstart="drag(event)"><span>1</span></div>
+            <div class="circle" draggable="true" style="background-color: rgb(56, 140, 218);" id="box-d"ondragstart="drag(event)"><span>7</span></div>
+            <div class="circle" draggable="true" style="background-color: rgb(56, 140, 218);" id="box-e"ondragstart="drag(event)"><span>3</span></div>
+        </section>
+       
+        <div class="example-parent">
+            <div class="example-origin">
+                <table>
+                    <tr>
+                        <td><img src="image/bird.png" width="50%" ></td>
+                        <td></td>
+                        <td><img src="image/bird.png" width="50%" ></td>
+                    </tr>
+                    <tr>
+                      <td><img src="image/bird.png" width="50%"></td>
+                      <td><img src="image/bird.png" width="50%" ></td>
+                      <td><img src="image/bird.png" width="50%"></td>
+                  </tr>
+                    <tr>
+                      <td><img src="image/bird.png" width="50%"></td>
+                        <td></td>
+                        <td><img src="image/bird.png" width="50%"></td>
+                    </tr>
+                </table>
+            </div>
+               </div>
+            <div class="example-parent2">
+            <div class="circle"
+            ondrop="drop(event)" ondragover="allowDrop(event)">
+          </div>
+        </div>
+       
+          <div class="example-parent1">
+            <table>
+                <tr>
+                    <td><img src="image/bird.png" width="50%" ></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><img src="image/bird.png" width="50%" ></td>
+                  <td></td>
+              </tr>
+                <tr>
+                  <td></td>
+                    <td></td>
+                    <td><img src="image/bird.png" width="50%" ></td>
+                </tr>
+            </table>
+        </div>
+        <div class="example-parent3">
+            <div class="circle"
+            ondrop="drop(event)" ondragover="allowDrop(event)" >
+          </div>
+        </div>
+    </body>
+</html>
+
+
+
+ 

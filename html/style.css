@@ -1,0 +1,332 @@
+/* .text {
+    font-size: 20px;
+    padding-left: 20px;
+   
+  }
+* {
+  box-sizing: border-box;
+}
+table, td{
+    border-collapse: collapse;
+  }
+th {
+  border-collapse: collapse;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  }
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  #t01 th {
+    background-color: green;
+    color: white;
+  }
+
+  #t02 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #t02 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  #t02 th {
+    background-color: blue;
+    color: white;
+  }
+  #t03 tr:nth-child(even) {
+    background-color: #eee;
+  }
+ 
+  #t03 th {
+    background-color: red;
+    color: white;
+  }
+
+.menu {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 15px;
+  margin-top: 7px;
+  
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+.d{
+    padding: 15px;
+}
+.d .floating-image{
+    max-width: 50px;
+}
+.d .floating-image.left{
+    float: left;
+    margin-right: 10px;
+}
+.main {
+  float: left;
+  width: 33.3%;
+
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.right {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(130, 160, 194);
+    border-radius: 50%;
+    position:relative;
+    margin: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  user-select: none;
+  cursor: move;
+  transition: 0.5s;
+}
+ .section{
+     width: 1000px;
+     height: 360px;
+     margin: 100px auto;
+     justify-content: space-around;
+ }
+  .score {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    margin: 1rem;
+    position: relative;
+    transition: opacity 0.2s;
+  }
+  .countdown{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .countdown div{
+    position:relative;
+    width: 100px;
+    height: 25px;
+    line-height: 100px;
+    text-align: right;
+    background: rgb(212, 195, 195);
+    color: rgb(8, 8, 8);
+    margin: 0 15px;
+    font-style: 3em;
+    display: flex;
+  align-items: center;
+  font-weight: bold;
+  }
+
+
+  .countdown #hrs:before{
+  content: '2 Hrs';
+  }
+  .countdown #mins:before{
+    content: '00 mins';
+    }
+    .countdown #secs:before{
+      content: '00 secs';
+      }
+/* Drag and Drop Related Styling */
+.draggable-elements {
+  display: flex;
+  justify-content: left;
+  margin: 1rem 1rem 1.5rem 1rem;
+  transition: opacity 0.5s;
+}
+.example-parent {
+  border: 2px solid rgb(57, 132, 182);
+  display: flex;
+  border-radius: 15px;
+  width: 20rem;
+  height: 20rem;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  float:left ;
+}
+.example-parent1 {
+  border: 2px solid rgb(57, 132, 182);
+  display: flex;
+  border-radius: 15px;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 10px;
+  margin-left: 15px;
+  float:left ;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.example-parent2 {
+  border: 2px solid rgb(57, 132, 182);
+  display: flex;
+  border-radius: 15px;
+  width: 20rem;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.example-parent3 {
+  border: 2px solid rgb(57, 132, 182);
+  display: flex;
+  border-radius: 15px;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.example-origin {
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  .circle{
+    width: 4rem; 
+    height: 4rem; 
+    font-size: 2rem;
+    margin: 0.5rem;  
+  }
+   .content{
+    width: 100%;  
+  }
+  .example-parent{
+    width: 10rem; 
+    height: 10rem; 
+    margin: 0.5rem;
+  }
+  .example-parent1{
+    width: 10rem; 
+    height: 10rem; 
+    margin: 0.5rem;
+  }
+  .example-parent2{
+    width: 10rem; 
+    height: 10rem; 
+    margin: 0.5rem;
+  }
+  .example-parent3{
+    width: 10rem; 
+    height: 10rem; 
+    margin: 0.5rem;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  color: #111;
+}
+
+.draggable-elements {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.draggable {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+.droppable {
+  height: 6.5rem;
+  width: 6.5rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #fff;
+  border: 3px dashed #111;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+.droppable span {
+  font-size: 1.25rem;
+  pointer-events: none; /* The element is never the target of pointer events */
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  /* background-color: #bee3f0; */
+  border-width: 5px;
+  transform: scale(1.1);
+}
+.droppable.dropped {
+  border-style: solid;
+  color: #fff;
+}
+.droppable.dropped span {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.droppable.dropped i {
+  pointer-events: none;
+}
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .draggable-elements { margin: 1.5rem; }
+}
+ 
